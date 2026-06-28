@@ -1,5 +1,6 @@
 import { Vazirmatn, Cormorant_Garamond, Montserrat } from "next/font/google";
 import "./globals.css";
+import ElevenLabsWidget from "@/components/ElevenLabsWidget";
 
 const vazirmatn = Vazirmatn({
   subsets: ["arabic"],
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
         }}
       >
         {children}
+        <ElevenLabsWidget />
       </body>
     </html>
   );
